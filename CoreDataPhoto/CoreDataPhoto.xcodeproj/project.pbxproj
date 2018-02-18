@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		545031C92031849E003D2812 /* Entity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545031C72031849E003D2812 /* Entity+CoreDataClass.swift */; };
+		545031CA2031849E003D2812 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545031C82031849E003D2812 /* Entity+CoreDataProperties.swift */; };
+		545031CD20318506003D2812 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545031CC20318506003D2812 /* CoreData.framework */; };
+		549825D92039F0FE00580DEF /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549825D82039F0FE00580DEF /* AddViewController.swift */; };
 		54FEDB942030E4AE00F83FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FEDB932030E4AE00F83FA8 /* AppDelegate.swift */; };
 		54FEDB992030E4AE00F83FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FEDB972030E4AE00F83FA8 /* Main.storyboard */; };
 		54FEDB9C2030E4AE00F83FA8 /* CoreDataPhoto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54FEDB9A2030E4AE00F83FA8 /* CoreDataPhoto.xcdatamodeld */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		545031C72031849E003D2812 /* Entity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		545031C82031849E003D2812 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		545031CC20318506003D2812 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		549825D82039F0FE00580DEF /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		54FEDB902030E4AE00F83FA8 /* CoreDataPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FEDB932030E4AE00F83FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FEDB982030E4AE00F83FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545031CD20318506003D2812 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +87,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		545031CB20318506003D2812 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				545031CC20318506003D2812 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		54FEDB872030E4AE00F83FA8 = {
 			isa = PBXGroup;
 			children = (
+				545031C72031849E003D2812 /* Entity+CoreDataClass.swift */,
+				545031C82031849E003D2812 /* Entity+CoreDataProperties.swift */,
 				54FEDB922030E4AE00F83FA8 /* CoreDataPhoto */,
 				54FEDBAA2030E4AE00F83FA8 /* CoreDataPhotoTests */,
 				54FEDBB52030E4AE00F83FA8 /* CoreDataPhotoUITests */,
 				54FEDB912030E4AE00F83FA8 /* Products */,
+				545031CB20318506003D2812 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +124,7 @@
 				54FEDB932030E4AE00F83FA8 /* AppDelegate.swift */,
 				54FEDBC42030E84B00F83FA8 /* TableViewController.swift */,
 				54FEDBC62030E86000F83FA8 /* TableViewCell.swift */,
+				549825D82039F0FE00580DEF /* AddViewController.swift */,
 				54FEDB972030E4AE00F83FA8 /* Main.storyboard */,
 				54FEDB9D2030E4AE00F83FA8 /* Assets.xcassets */,
 				54FEDB9F2030E4AE00F83FA8 /* LaunchScreen.storyboard */,
@@ -265,9 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545031CA2031849E003D2812 /* Entity+CoreDataProperties.swift in Sources */,
 				54FEDB942030E4AE00F83FA8 /* AppDelegate.swift in Sources */,
+				549825D92039F0FE00580DEF /* AddViewController.swift in Sources */,
 				54FEDBC72030E86000F83FA8 /* TableViewCell.swift in Sources */,
 				54FEDBC52030E84B00F83FA8 /* TableViewController.swift in Sources */,
+				545031C92031849E003D2812 /* Entity+CoreDataClass.swift in Sources */,
 				54FEDB9C2030E4AE00F83FA8 /* CoreDataPhoto.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
